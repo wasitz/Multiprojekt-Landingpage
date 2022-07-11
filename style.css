@@ -24,18 +24,18 @@ header h1 {
 
 .banner img {
     position: fixed;
-    display:block;
     top: 0;
     left: 0;
     transition: 0.5;
     margin: 0 auto;
     z-index: 0;
+    text-align: center;
+    min-height: 580px;
 }
 
 
 section.main {
     position: relative;
-    /* top: 580px; */
     padding-top: 0;
 
 }
@@ -58,6 +58,16 @@ div.wrapper {
 .cmtStart h1, .seriaCmt3 h1 {
     border-bottom: 2px solid blue;
 }
+
+
+.seriaCmtStart img{
+    transition: 0.7s;
+}
+
+.imgStart {
+    transition: 2s;
+}
+
 /* info */
 div #threeFeatures {
     transform: scale(0);
@@ -87,13 +97,9 @@ div .main {
 
 div .seriaCmtStart .cmtStart, .imgStart {
     padding: 15px;
-
-
 }
 
-.seriaCmtStart img{
-    transition: 0.5s;
-}
+
 .seriaCmtStart ul {
     border-bottom: 2px blue solid;
 

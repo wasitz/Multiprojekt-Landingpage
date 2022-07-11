@@ -30,7 +30,6 @@ setInterval(changeSlide, time);
 const threeFeatures = document.getElementById('threeFeatures');
 
 threeFeaturesAppear = function(){
-    console.log(threeFeatures);
     threeFeatures.style.transform = "scale(1)";
 }
 
@@ -43,7 +42,7 @@ const cmtScrollOpacity = document.querySelectorAll('.js-scroll-opacity');
 
 const elementInView = (el, scrollOffset = 0) => {
   const elementTop = el.getBoundingClientRect().top;
-  threeFeaturesAppear();
+  
  
   return (
     elementTop <= 
@@ -71,7 +70,9 @@ const scrollAnimation = () => {
         if (elementInView(el, 100)) {
             displayScrollElement(el);
         }
-    });
+    }),
+    threeFeaturesAppear();
+    ;
 
 }
 
