@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+}
+
+
+header {
+    height: 100vh;
+}
+
+header>* {
+    position: absolute;
+}
+
+header h1 {
+    top: 280px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: lightgray;
+    padding: 10px;
+    filter: blur(0.5px);
+}
+
+.banner img {
+    position: fixed;
+    display:block;
+    top: 0;
+    left: 0;
+    transition: 0.5;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+
+section.main {
+    position: relative;
+    /* top: 580px; */
+    padding-top: 0;
+
+}
+
+div {
+    background-color: white;
+    position:relative;
+    display: block;
+    color: blue;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+div.wrapper {
+    display: block;
+    height: 100%;
+}
+
+.cmtStart h1, .seriaCmt3 h1 {
+    border-bottom: 2px solid blue;
+}
+/* info */
+div #threeFeatures {
+    transform: scale(0);
+    transition: 0.5s;
+
+}
+
+div .infoline .container.active {
+    transform: scale(1);
+}
+
+.bi-bar-chart-steps {
+    transition: 0.5s;
+    transform: rotate(0deg);
+
+}
+.bi-bar-chart-steps:hover {
+  transform: rotate(360deg);
+}
+
+
+div .main {
+    width: 100vw;
+    /* min-height: 150vh; */
+
+}
+
+
+div .seriaCmtStart .cmtStart, .imgStart {
+    padding: 15px;
+}
+
+.seriaCmtStart img{
+transition: 0.5s;
+}
+.seriaCmtStart ul {
+    border-bottom: 2px blue solid;
+
+}
+
+
+.seriaCmtStart img:hover{
+    filter: blur(4px)
+
+}
+
+
+div ul.footerList {
+    font-size: 0.7em;
+} 
+
+
+.btns {
+    top: 100px;
+    margin: 10px 0;
+
+}
+
+.btns button {
+    margin: 15px ;
+    height: 7vw;
+    width: 7vw;
+    border-radius: 50%;
+    color: blue;
+    background-color: white;
+    border-color: blue;
+}
+
+
+.btns button:hover {
+    background-color: blue;
+    color: white;
+    transition: .7s;
+
+
+}
+
+.js-scroll-left {
+    left: -1000px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.js-scroll-left.scrolled{
+    opacity: 1;
+    left: 0;
+}
+.js-scroll-right {
+    right: -1000px;
+    transition: 0.5s;
+    opacity: 0;
+
+}
+.js-scroll-right.scrolled{
+    right: 0;
+    opacity: 1;
+}
+
+.js-scroll-opacity {
+    opacity: 0;
+    transition: 0.7s;
+}
+.js-scroll-opacity.scrolled {
+    opacity: 1;
+}
+
+
+
+.carousel {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 400px;
+}
+
+.carouselMain img {
+    height: 300px;
+    width: 300px;
+}
+
+.carousel-caption {
+    font-size: 2em;
+    background-color: rgba(57, 57, 57, 0.3);
+    padding: 0;
+    bottom: 400px;
+    left: 80px;
+}
+
+.carousel-item{
+    height: 750px;
+    width: 620;
+}
+
+
+
+
+
+div.imgStart .active {
+    background-color: black;
+
+}
+.moreBtn {
+    padding: 10px 20px;
+    border: 2px  white solid;
+    color:  white;
+    border-radius: 20%;
+    font-size: 1.3rem;
+    background-color:  blue;
+    transition: 0.5s;
+
+}
+
+.moreBtn:hover {
+    color: blue;
+    background-color: white;
+    border: 2px solid blue;
+}
+
+/* .footerBgc {
+    position: relative;
+    bottom: 10px;
+    left: 0;
+    background-color: black;
+    overflow: visible;
+    width: 100vw;
+    z-index: 10;
+} */
+
+footer {
+    z-index: 1;
+    width: 100vw;
+}
+
+@media (max-width: 860px) {
+ .bi-display,
+ .bi-mouse2,
+ .bi-youtube,
+ .bi-camera-video,
+ .bi-folder,
+ .bi-lightbulb,
+ .bi-wrench-adjustable,
+ .bi-file-earmark-bar-graph,
+ .bi-card-image,
+ .bi-info-circle {
+width: 30px;
+height: 30px;
+
+}}
+@media (max-width: 600px) {
+ .bi-display,
+ .bi-mouse2,
+ .bi-youtube,
+ .bi-camera-video,
+ .bi-folder,
+ .bi-lightbulb,
+ .bi-wrench-adjustable,
+ .bi-file-earmark-bar-graph,
+ .bi-card-image,
+ .bi-info-circle {
+width: 20px;
+height: 20px;
+
+}}
+@media (max-width: 360px) {
+ .bi-display,
+ .bi-mouse2,
+ .bi-youtube,
+ .bi-camera-video,
+ .bi-folder,
+ .bi-lightbulb,
+ .bi-wrench-adjustable,
+ .bi-file-earmark-bar-graph,
+ .bi-card-image,
+ .bi-info-circle {
+    opacity: 0;
+
+}}
