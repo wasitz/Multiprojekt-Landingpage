@@ -230,7 +230,8 @@
                                 <img src="img/seriaXe.jpg" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>SERIA Xe!</h5>
-                                    <p>Lepsze od Ye!</br><button class="moreBtn">Więcej</button></p>
+                                    <p>Lepsze od Ye!</br><button class="moreBtn" data-toggle="modal"
+                                            data-target="#exampleModalCenter">Więcej</button></p>
                                 </div>
                             </div>
                         </div>
@@ -245,34 +246,36 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
+
+
                 </section>
 
 
                 <!-- Buttony -->
                 <section class="btns">
                     <div class="container">
-                        <div class="row">
+                        <div class="row d-flex">
 
-                            <div class="col-xxl-2 col-sm-2 col-xs-12"><button> <svg xmlns="http://www.w3.org/2000/svg"
+                            <div class="col-xxl-3 col-sm-3 col-xs-12"><button> <svg xmlns="http://www.w3.org/2000/svg"
                                         width="50" height="50" fill="currentColor" class="bi bi-display"
                                         viewBox="0 0 16 16">
                                         <path
                                             d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z" />
                                     </svg></button> </br>
                                 <span>Darmowe oprogramowanie</span></div>
-                            <div class="col-xxl-2 col-sm-2 col-xs-12"><button><svg xmlns="http://www.w3.org/2000/svg"
+                            <div class="col-xxl-3 col-sm-3 col-xs-12"><button><svg xmlns="http://www.w3.org/2000/svg"
                                         width="50" height="50" fill="currentColor" class="bi bi-mouse2"
                                         viewBox="0 0 16 16">
                                         <path
                                             d="M3 5.188C3 2.341 5.22 0 8 0s5 2.342 5 5.188v5.625C13 13.658 10.78 16 8 16s-5-2.342-5-5.188V5.189zm4.5-4.155C5.541 1.289 4 3.035 4 5.188V5.5h3.5V1.033zm1 0V5.5H12v-.313c0-2.152-1.541-3.898-3.5-4.154zM12 6.5H4v4.313C4 13.145 5.81 15 8 15s4-1.855 4-4.188V6.5z" />
                                     </svg></button></br>Kurs Online</div>
-                            <div class="col-xxl-2 col-sm-2 col-xs-12"><button><svg xmlns="http://www.w3.org/2000/svg"
+                            <div class="col-xxl-3 col-sm-3 col-xs-12"><button><svg xmlns="http://www.w3.org/2000/svg"
                                         width="50" height="50" fill="currentColor" class="bi bi-youtube"
                                         viewBox="0 0 16 16">
                                         <path
                                             d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
                                     </svg></button></br>Filmiki instruktażowe</div>
-                            <div class="col-xxl-2 col-sm-2 col-xs-12"><button><svg xmlns="http://www.w3.org/2000/svg"
+                            <div class="col-xxl-3 col-sm-3 col-xs-12"><button><svg xmlns="http://www.w3.org/2000/svg"
                                         width="50" height="50" fill="currentColor" class="bi bi-camera-video"
                                         viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
@@ -284,11 +287,6 @@
                                         <path
                                             d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4H2.19zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707z" />
                                     </svg></button></br>Katalog</div>
-
-                            <!-- Pusty div -->
-                            <div class="col-xxl-2 col-sm-2 col-xs-12"></div>
-                            <!-- Pusty div  -->
-                            <div class="col-xxl-1 col-sm-2 col-xs-12"></div>
 
                             <div class="col-xxl-2 col-sm-2 col-xs-12"><button><svg xmlns="http://www.w3.org/2000/svg"
                                         width="50" height="50" fill="currentColor" class="bi bi-lightbulb"
