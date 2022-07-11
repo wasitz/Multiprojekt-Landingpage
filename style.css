@@ -81,17 +81,18 @@ div .infoline .container.active {
 
 div .main {
     width: 100vw;
-    /* min-height: 150vh; */
 
 }
 
 
 div .seriaCmtStart .cmtStart, .imgStart {
     padding: 15px;
+
+
 }
 
 .seriaCmtStart img{
-transition: 0.5s;
+    transition: 0.5s;
 }
 .seriaCmtStart ul {
     border-bottom: 2px blue solid;
@@ -112,7 +113,6 @@ div ul.footerList {
 
 .btns {
     top: 100px;
-    margin: 10px 0;
 
 }
 
@@ -139,10 +139,12 @@ div ul.footerList {
     left: -1000px;
     opacity: 0;
     transition: 0.5s;
+    
 }
 .js-scroll-left.scrolled{
     opacity: 1;
     left: 0;
+
 }
 .js-scroll-right {
     right: -1000px;
@@ -153,6 +155,7 @@ div ul.footerList {
 .js-scroll-right.scrolled{
     right: 0;
     opacity: 1;
+
 }
 
 .js-scroll-opacity {
@@ -216,15 +219,6 @@ div.imgStart .active {
     border: 2px solid blue;
 }
 
-/* .footerBgc {
-    position: relative;
-    bottom: 10px;
-    left: 0;
-    background-color: black;
-    overflow: visible;
-    width: 100vw;
-    z-index: 10;
-} */
 
 footer {
     z-index: 1;
