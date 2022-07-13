@@ -1,28 +1,3 @@
-// Banner
-const slideList = [{
-    img: "img/banner2.jpg"
-},
-{
-    img: "img/banner3.jpg"
-},
-
-{
-    img: "img/banner4.jpg"
-}]
-
-const image = document.querySelector('img.slider');
-
-const time = 3000;
-let active = 0;
-
-const changeSlide = () => {
-    active++;
-    if(active === slideList.length) {
-        active = 0;
-    }
-    image.src = slideList[active].img;
-}
-setInterval(changeSlide, time);
 
 
 
@@ -30,7 +5,8 @@ setInterval(changeSlide, time);
 const threeFeatures = document.getElementById('threeFeatures');
 
 threeFeaturesAppear = function(){
-    threeFeatures.style.transform = "scale(1)";
+    threeFeatures.style.top = "0px";
+    threeFeatures.style.backgroundColor = "white";
 }
 
 
@@ -70,12 +46,12 @@ const scrollAnimation = () => {
         if (elementInView(el, 100)) {
             displayScrollElement(el);
         }
-    }),
-    threeFeaturesAppear();
-    ;
+    });
 
 }
 
 window.addEventListener('scroll', ()=>{
     scrollAnimation();
 })
+
+document.addEventListener("DOMContentLoaded", threeFeaturesAppear());
