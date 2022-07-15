@@ -2,12 +2,14 @@
 
 
 // Features
-const threeFeatures = document.getElementById('threeFeatures');
+const card1 = document.querySelector('.card1').style.top = "0px";
+const card2 = document.querySelector('.card2');
+const card3 = document.querySelector('.card3');
 
-threeFeaturesAppear = function(){
-    threeFeatures.style.top = "0px";
-    threeFeatures.style.backgroundColor = "white";
-}
+
+// appearCard1 = function(){
+//     card1.style.top = "0px";
+// }
 
 
 // CMT scroll scrollElements
@@ -54,4 +56,7 @@ window.addEventListener('scroll', ()=>{
     scrollAnimation();
 })
 
-document.addEventListener("DOMContentLoaded", threeFeaturesAppear());
+// document.addEventListener("DOMContentLoaded", appearCard1());
+// setTimeout(appearCard1(), 1000);
+// setTimeout(appearCard1(), 1000);
+// setTimeout(appearCard1(), 1000);

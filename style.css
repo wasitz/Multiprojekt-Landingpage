@@ -2,16 +2,10 @@
     margin: 0;
     padding: 0;
     font-family: arial, sans-serif;
+    box-sizing: border-box;
+
 }
 
-
-/* header {
-    height: 580px;
-}
-
-header>* {
-    position: absolute;
-} */
 
 header h1 {
     position: fixed;
@@ -19,47 +13,56 @@ header h1 {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     color: lightgray;
-    padding: 10px;
+    padding: 10px 0;
     filter: blur(0.5px);
     text-align: center;
-    
+    min-width: 360px;
 }
 
 
+.card1, .card2, .card3 {
+    top: -1000px;
+    transition: 1s;
+}
 
 
 
 section.main div{
     background-color: white;
     position: relative;
-    color: blue;
-    text-align: center;
-    margin: 0 auto;
+    color:  rgb(53, 81, 132);
+    margin: 5px auto;
     overflow: hidden;
+    box-sizing: border-box;
+
+}
+section.main div h1, h2, h4, h5{
+    color: blue;
+
 }
 
+.card-body {
+    padding-left: 30px;
+    min-height: 300px;
+
+}
 div.wrapper {
     display: block;
     height: 100%;
 }
 
-.cmtStart, .seriaCmt3 {
-    margin: 0;
+.seriaCmt3 .tiltonGroup{
+    margin: 10px auto;
     padding: 0;
 }
-
-div.row {
-    margin: 0;
-    padding: 0;
+.seriaCmtStart, .seriaCmt3 .tiltonGroup .imgStart{
+    margin: 50px auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 /* info */
-div #threeFeatures {
-    top: 1000px;
-    transition: 0.7s;
-    background-color: white;
 
-}
 
 .bi-bar-chart-steps {
     transition: 0.5s;
@@ -76,11 +79,13 @@ div .main {
 
 }
 
-
-div .seriaCmtStart .cmtStart, .imgStart {
-    padding: 20px 0px;
-    margin: 50px 0px;
+.seriaCmtStart {
+padding-top: 100px;
+}
+div .seriaCmtStart .cmtStart {
+    margin: 70px 0px;
     /* border-bottom: none; */
+    text-align: left;
 
 }
 
@@ -99,7 +104,7 @@ div .seriaCmtStart .cmtStart, .imgStart {
     max-width: 480px;
     text-align: center;
     margin: 0 auto;
-
+    margin: 0 20px;
 }
 
 
@@ -111,6 +116,12 @@ div ul.footerList {
 
 .btns {
     margin-top: 50px;
+    text-align: center;
+    color: blue;
+
+}
+.btns span{
+    color: blue;
 
 }
 
@@ -136,24 +147,28 @@ div ul.footerList {
 .js-scroll-left {
     left: -1000px;
     opacity: 0;
-    transition: 0.5s;
+    transition: 1s;
+    text-align: right;
     
 }
 .js-scroll-left.scrolled{
     opacity: 1;
     left: 0;
+    text-align: right;
 
 
 }
 .js-scroll-right {
     right: -1000px;
-    transition: 0.5s;
+    transition: 1s;
     opacity: 0;
+    text-align: left;
 
 }
 .js-scroll-right.scrolled{
     right: 0;
     opacity: 1;
+    text-align: left;
 
 
 }
@@ -167,19 +182,12 @@ div ul.footerList {
 
 }
 
-
-
-
-
-div.imgStart .active {
-    background-color: black;
-
-}
 .moreBtn {
+    margin: 20px;
     padding: 10px 20px;
     border: 2px  white solid;
     color:  white;
-    border-radius: 20%;
+    border-radius: 5%;
     font-size: 1.3rem;
     background-color:  blue;
     transition: 0.5s;
@@ -196,6 +204,24 @@ div.imgStart .active {
 footer {
     z-index: 1;
     width: 100vw;
+    margin-top: 40px;
+    background-color: rgb(53, 81, 132);
+    color: white;
+    transition: 1s;
+
+}
+
+
+.nav-link{
+    color: white;
+    border-bottom: none;
+
+}
+
+.nav-link:hover{
+    color: white;
+    border-bottom: 1px solid white;
+
 }
 
 @media (max-width: 860px) {
@@ -256,43 +282,10 @@ height: 15px;
  .bi-file-earmark-bar-graph,
  .bi-card-image,
  .bi-info-circle {
-width: 15px;
-height: 15px;
+width: 20px;
+height: 20px;
 }
 .btns button {
 border: none;
 }
 }
-@media (max-width: 359px) {
- .bi-display,
- .bi-mouse2,
- .bi-youtube,
- .bi-camera-video,
- .bi-folder,
- .bi-lightbulb,
- .bi-wrench-adjustable,
- .bi-file-earmark-bar-graph,
- .bi-card-image,
- .bi-info-circle {
-    opacity: 0;
-
-}}
-
-@media (min-width: 40em) {
-    /* Bump up size of carousel content */
-    .carousel-caption p {
-      margin-bottom: 1.25rem;
-      font-size: 1.25rem;
-      line-height: 1.4;
-    }
-  
-    .featurette-heading {
-      font-size: 50px;
-    }
-  }
-  
-  @media (min-width: 62em) {
-    .featurette-heading {
-      margin-top: 7rem;
-    }
-  }
