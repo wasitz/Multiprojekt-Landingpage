@@ -2,14 +2,22 @@
 
 
 // Features
-const card1 = document.querySelector('.card1').style.top = "0px";
+const card1 = document.querySelector('.card1');
 const card2 = document.querySelector('.card2');
 const card3 = document.querySelector('.card3');
 
 
-// appearCard1 = function(){
-//     card1.style.top = "0px";
-// }
+const appearCard1 = setTimeout(function(){
+    card1.style.top = "0px";
+}, 0)
+
+const appearCard2 = setTimeout(function(){
+    card2.style.top = "0px";
+}, 500)
+
+const appearCard3 = setTimeout(function(){
+    card3.style.top = "0px";
+}, 1000)
 
 
 // CMT scroll scrollElements
@@ -56,7 +64,4 @@ window.addEventListener('scroll', ()=>{
     scrollAnimation();
 })
 
-// document.addEventListener("DOMContentLoaded", appearCard1());
-// setTimeout(appearCard1(), 1000);
-// setTimeout(appearCard1(), 1000);
-// setTimeout(appearCard1(), 1000);
+// document.addEventListener("DOMContentLoaded", card1timeout());
