@@ -19,6 +19,21 @@ header h1 {
     min-width: 360px;
 }
 
+.navbar {
+    border-bottom: 2px solid transparent;
+    transition: 1s;
+    background-color: rgb(53, 81, 132);
+    opacity: 0;
+}
+.navbar .navBtn {
+    background-color: white;
+}
+
+.navbar .navBtn:hover {
+    color: white;
+    background-color: #0d6efd;
+}
+
 
 .card1, .card2, .card3 {
     top: -1000px;
@@ -37,16 +52,16 @@ section.main div{
     z-index: 1;
 
 }
-/* section.main div h1, h2, h4, h5{
-    color: blue;
-} */
+
 section.main div h1{
-    border-bottom: 1px solid blue;
+    margin-top: 50px;
+    border-bottom: 1px solid #0d6efd;
 }
 
 .card-body {
     padding-left: 30px;
     min-height: 300px;
+    text-align: left;
 
 }
 div.wrapper {
@@ -54,33 +69,34 @@ div.wrapper {
     height: 100%;
 }
 
-div.divider {
+
+div.dividerDown {
     height: 5vh;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     background: rgb(207,207,207);
-    background: linear-gradient(0deg, rgba(207,207,207,1) 0%, rgba(255,255,255,1) 97%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(207,207,207,1) 0%, rgba(255,255,255,1) 97%, rgba(255,255,255,1) 100%);
 }
 
 .seriaCmt3 .tiltonGroup{
-    margin: 10px auto;
+
+    margin: 100px auto;
     padding: 0;
 }
 .seriaCmtStart, .seriaCmt3 .tiltonGroup .imgStart {
     margin: 50px auto;
-    padding-top: 20px;
+    padding-top: 25px;
     padding-bottom: 10px;
     justify-content: center;
-
-
 }
 
 .seriaCmtStart img, .seriaCmt3 .tiltonGroup .imgStart img {
     display: flex;
     justify-content: center;
     transition: 0.5s;
-    filter: blur(1.1px);
+    filter: blur(1.2px);
 
 }
+
 
 #myCarousel .carousel-item img {
     filter: blur(0);
@@ -170,7 +186,7 @@ div ul.footerList {
     background-color: #0d6efd;
     color: white;
     transition: .7s;
-    transform: scale(1.2);
+    transform: scale(1.1);
 
 
 }
