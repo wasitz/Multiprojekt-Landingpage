@@ -38,18 +38,24 @@ header h1 {
 .card1, .card2, .card3 {
     top: -1000px;
     transition: 1s;
+    text-align: left;
 }
 
+#threeFeatures .card3 ul {
+    list-style: url('/img/check.svg');
+    padding: 0 20px;
+    
+}
 
 
 section.main div{
     background-color: white;
     position: relative;
     color:  rgb(53, 81, 132);
-    margin: 5px auto;
     overflow: hidden;
     box-sizing: border-box;
     z-index: 1;
+    margin: auto;
 
 }
 
@@ -59,11 +65,15 @@ section.main div h1{
 }
 
 .card-body {
-    padding-left: 30px;
     min-height: 300px;
     text-align: left;
-
 }
+
+section.main div.infoline .threeFeatures {
+margin: 1000px;
+}
+
+
 div.wrapper {
     display: block;
     height: 100%;
@@ -72,34 +82,36 @@ div.wrapper {
 
 div.dividerDown {
     height: 5vh;
-    margin-bottom: 40px;
     background: rgb(207,207,207);
     background: linear-gradient(180deg, rgba(207,207,207,1) 0%, rgba(255,255,255,1) 97%, rgba(255,255,255,1) 100%);
 }
 
 .seriaCmt3 .tiltonGroup{
-
-    margin: 100px auto;
+    margin: 0 auto;
     padding: 0;
 }
 .seriaCmtStart, .seriaCmt3 .tiltonGroup .imgStart {
     margin: 50px auto;
-    padding-top: 25px;
-    padding-bottom: 10px;
     justify-content: center;
+}
+
+.seriaCmtStart ul {
+    list-style: url('/img/check.svg');
+    padding: 20px;
+
 }
 
 .seriaCmtStart img, .seriaCmt3 .tiltonGroup .imgStart img {
     display: flex;
     justify-content: center;
     transition: 0.5s;
-    filter: blur(1.2px);
 
 }
-
+.seriaCmtStart img:hover, .seriaCmt3 .tiltonGroup .imgStart img:hover {
+    transform: scale(1.02);
+}
 
 #myCarousel .carousel-item img {
-    filter: blur(0);
     margin: 0 35%;
     display: flex;
     justify-content: center;
@@ -114,11 +126,7 @@ div.dividerDown {
 }
 
 
-.seriaCmtStart img:hover, .seriaCmt3 .tiltonGroup .imgStart img:hover {
-    transform: scale(1.02);
-    filter: blur(0);
 
-}
 
 /* info */
 
@@ -135,16 +143,10 @@ div.dividerDown {
 padding-top: 100px;
 }
 
-div .seriaCmtStart .cmtStart {
-    text-align: left;
-
-}
-
 
 .seriaCmtStart img {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
     margin-bottom: 150px;
-
 }
 
 .imgStart img {
@@ -230,13 +232,12 @@ div ul.footerList {
 }
 
 .moreBtn {
-    margin: 20px;
+    margin-top: 20px;
     padding: 10px 20px;
-    border: 2px  white solid;
+    border: 2px  #0d6efd solid;
     color:  white;
     border-radius: 5%;
     font-size: 1.3rem;
-    /* background-color:  blue; */
     transition: 0.5s;
 
 }
@@ -270,6 +271,8 @@ footer {
 
 }
 
+
+
 @media (max-width: 860px) {
  .bi-display,
  .bi-mouse2,
@@ -302,9 +305,19 @@ height: 20px;
 }
 
 #myCarousel .carousel-item img {
-    margin: 0 20%;
+    margin: 0 15%;
 }
 
+.imgStart.cmtLower, .cmtStart.cmtLower {
+border-bottom: 4px lightgray ridge;
+margin: 0 auto;
+padding-bottom: 20px;
+
+}
+.seriaCmtStart, .seriaCmt3 .tiltonGroup .imgStart {
+    margin: 0 auto 10px;
+    text-align: center;
+}
 
 }
 @media (max-width: 560px) {
@@ -321,7 +334,12 @@ height: 20px;
 width: 15px;
 height: 15px;
 
-}}
+}
+footer .container {
+    text-align: center;
+    justify-content: center;
+}
+}
 @media (max-width: 520px) {
  .bi-display,
  .bi-mouse2,

@@ -8,15 +8,15 @@ const card3 = document.querySelector('.card3');
 
 
 const appearCard1 = setTimeout(function(){
-    card1.style.top = "0px";
+    card1.style.top = "15px";
 }, 0)
 
 const appearCard2 = setTimeout(function(){
-    card2.style.top = "0px";
+    card2.style.top = "15px";
 }, 500)
 
 const appearCard3 = setTimeout(function(){
-    card3.style.top = "0px";
+    card3.style.top = "15px";
 }, 1000)
 
 
